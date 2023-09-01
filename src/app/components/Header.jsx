@@ -5,7 +5,7 @@ export function Header() {
   return (
     <section className={style.header}>
       <Image
-        src={"/../LOLheader.jpg"}
+        src={"/LOLheader.jpg"}
         width={0}
         height={0}
         sizes="100vw"
