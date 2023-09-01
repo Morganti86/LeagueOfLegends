@@ -1,0 +1,48 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.championList {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: center;
+}
+
+.championCard {
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(195, 174, 60);
+  height: 250px;
+  width: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 5% 0;
+}
+
+.championName {
+  writing-mode: vertical-lr;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  backdrop-filter: blur(5px);
+  transform: rotate(180deg);
+  text-transform: uppercase;
+  justify-content: end;
+  -webkit-text-stroke: 1px rgb(195, 174, 60);
+  font-family: system-ui;
+  letter-spacing: 0.05em;
+}
+
+.championCard:hover .championName {
+  text-align: right;
+}

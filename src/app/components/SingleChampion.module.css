@@ -1,0 +1,98 @@
+.container {
+  margin: 2% 20%;
+}
+
+.title {
+  font-size: x-large;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 1%;
+}
+
+.subTitle {
+  font-size: large;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: larger;
+}
+
+/* .description li {
+  list-style-position: inside;
+} */
+
+.containerBar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  font-weight: bold;
+  line-height: 1rem;
+  white-space: pre;
+}
+
+.progress_bar {
+  border: 2px solid rgb(195, 174, 60);
+  border-radius: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.progress_bar > div {
+  white-space: nowrap;
+  border-radius: 15px;
+  animation: progress_bar 10s;
+  -webkit-text-stroke: 0.1px black;
+}
+
+@keyframes progress_bar {
+  0% {
+    width: 0;
+  }
+}
+
+.containerSpells {
+  align-items: center;
+  margin-top: 3%;
+  border: 2px solid rgb(195, 174, 60);
+  margin: 1%;
+  padding: 2%;
+  width: 100%;
+}
+
+.containerAbilities {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.skinBorder {
+  border: 2px solid rgb(195, 174, 60);
+  margin: 1%;
+}
+
+.containerSkin {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin-top: 3%; */
+  position: relative;
+}
+
+.skinName {
+  margin-left: 2%;
+  font-size: 2.6vw;
+  flex-wrap: wrap;
+  font-weight: 700;
+  backdrop-filter: blur(5px);
+  text-transform: uppercase;
+  justify-content: center;
+  -webkit-text-stroke: 0.1vw rgb(195, 174, 60);
+  font-family: system-ui;
+  letter-spacing: 0.05em;
+  position: absolute;
+}

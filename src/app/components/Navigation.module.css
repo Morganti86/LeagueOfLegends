@@ -1,0 +1,23 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 1.5%;
+  text-transform: uppercase;
+  border-top: 2px solid rgb(195, 174, 60);
+  border-bottom: 2px solid rgb(195, 174, 60);
+  font-family: system-ui;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.navigation li:hover {
+  color: rgb(195, 174, 60);
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
+.li {
+  padding: 0% 3%;
+}
