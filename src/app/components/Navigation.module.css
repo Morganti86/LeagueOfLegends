@@ -1,9 +1,9 @@
 .navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   list-style-type: none;
-  padding: 1.5%;
+  /* padding: 1.5%; */
   text-transform: uppercase;
   border-top: 2px solid rgb(195, 174, 60);
   border-bottom: 2px solid rgb(195, 174, 60);
@@ -14,10 +14,21 @@
 
 .navigation li:hover {
   color: rgb(195, 174, 60);
-  text-decoration: underline;
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
+}
+
+.isSelected {
+  background-color: rgb(195, 174, 60);
 }
 
 .li {
-  padding: 0% 3%;
+  text-align: center;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  width: 165px;
+  line-height: 30px;
 }

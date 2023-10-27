@@ -1,4 +1,4 @@
-import style from "../components/SingleChampion.module.css";
+import style from "./SingleChampion.module.css";
 
 export function ChampionDifficulty({ difficulty }) {
   let difDescription;
@@ -7,11 +7,9 @@ export function ChampionDifficulty({ difficulty }) {
   if (difficulty <= 3) {
     difDescription = "LOW";
     difColor = "rgb(0, 255, 0)"; // green
-    //  rgb(142, 223, 21) -> lgreen
   } else if (difficulty < 8) {
     difDescription = "MEDIUM";
-    // difColor = "rgb(220, 220, 8)"; // yellow
-    difColor = "rgb(195, 174, 60)";
+    difColor = "rgb(195, 174, 60)"; //yellow
   } else {
     difDescription = "HIGH";
     difColor = "rgb(255, 0, 0)"; // red

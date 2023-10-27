@@ -1,4 +1,4 @@
-import style from "../components/ChampionTitle.module.css"
+import style from "./ChampionTitle.module.css"
 
 export function ChampionTitle({name, title}) {
   return (

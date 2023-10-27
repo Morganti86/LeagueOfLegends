@@ -1,4 +1,4 @@
-import { ListOfMages } from "../components/ListOfMages";
+import { ListOfMages } from "./ListOfMages";
 
 export default function Mages() {
   return (

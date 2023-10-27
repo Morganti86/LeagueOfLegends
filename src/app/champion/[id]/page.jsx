@@ -1,4 +1,4 @@
-import SingleChampion from "@/app/components/SingleChampion";
+import SingleChampion from "./SingleChampion";
 
 export default function Champion({ params }) {
   const { id } = params;

@@ -1,4 +1,4 @@
-import { ListOfMarksmans } from "../components/ListOfMarksmans";
+import { ListOfMarksmans } from "./ListOfMarksmans";
 
 export default function Marksmans() {
   return (

@@ -1,4 +1,4 @@
-import styles from "./ListOfChampions.module.css";
+import styles from "../components/ListOfChampions.module.css";
 import Link from "next/link";
 
 const fetchAllChampions = () => {

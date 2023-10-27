@@ -5,7 +5,7 @@ export function Header() {
   return (
     <section className={style.header}>
       <Image
-        src={"/LOLheader.jpg"}
+        src={"/LOLheader.webp"}
         width={0}
         height={0}
         sizes="100vw"
@@ -13,7 +13,7 @@ export function Header() {
         priority={true}
         // placeholder="blur"
         // blurDataURL={"/../LOLwallpaper.jpg"}
-        style={{ width: "100%", height: "18vw" }} // optional
+        style={{ width: "100%", height: "20vw" }} // optional
       />
     </section>
   );

@@ -1,4 +1,4 @@
-import styles from './ListOfChampions.module.css'
+import styles from "../components/ListOfChampions.module.css";
 import Link from "next/link";
 
 const fetchAllChampions = () => {
@@ -7,16 +7,16 @@ const fetchAllChampions = () => {
   ).then((res) => res.json());
 };
 
-export async function ListOfAssassins() {
+export async function ListOfSupports() {
   const allChampions = await fetchAllChampions();
-  const assassins = Object.values(allChampions.data).filter((champion) =>
-    champion.tags.includes("Assassin")
+  const supports = Object.values(allChampions.data).filter((champion) =>
+    champion.tags.includes("Support")
   );
 
   return (
     <div className={styles.container}>
       <div className={styles.championList}>
-        {assassins.map((champion) => (
+        {supports.map((champion) => (
           <Link href="/champion/[id]" as={`/champion/${champion.id}`}>
             <div
               style={{

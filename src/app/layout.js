@@ -9,11 +9,15 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "League of Legends App",
   description: "Champions information",
+  viewport: "width=device-width, initial-scale=1.0"
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>{metadata.title}</title>
+      </head>
       <body>
         <Header />
         <Navigation />

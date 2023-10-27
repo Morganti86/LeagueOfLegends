@@ -1,9 +1,9 @@
-import { ListOfAssassins } from "../components/ListOfAssassins";
+import { ListOfAssassins } from "./ListOfAssassins";
 
 export default function Assasins() {
   return (
     <section>
-      <ListOfAssassins />
+      <ListOfAssassins/>
     </section>
   );
 }

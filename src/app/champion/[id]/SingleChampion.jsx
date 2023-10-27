@@ -2,7 +2,7 @@ import { ChampionImage } from "./ChampionImage";
 import { ChampionTitle } from "./ChampionTitle";
 import { ChampionDescription } from "./ChampionDescription";
 import { ChampionSkins } from "./ChampionSkins";
-import { Title } from "./Title";
+import { Title } from "../../components/Title";
 import ChampionAbilities from "./ChampionAbilities";
 import { ChampionDifficulty } from "./ChampionDifficulty";
 

@@ -1,5 +1,5 @@
 .container {
-  margin: 2% 20%;
+  margin: 2% 25%;
 }
 
 .title {
@@ -74,13 +74,11 @@
 }
 
 .containerSkin {
-  align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  /* margin-top: 3%; */
-  position: relative;
+  width: 98%;
+  margin-bottom: 3%;
 }
 
 .skinName {

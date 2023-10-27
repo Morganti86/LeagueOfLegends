@@ -1,4 +1,4 @@
-import { ListOfFighters } from "../components/ListOfFighters";
+import { ListOfFighters } from "./ListOfFighters";
 
 export default function Fighters() {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import style from "../components/SingleChampion.module.css"
+import style from "./SingleChampion.module.css"
 
 export function ChampionSpells({ spells }) {
   let textContentOutput = "";
@@ -24,11 +24,11 @@ export function ChampionSpells({ spells }) {
           <Image
             className={style.skin}
             src={`https://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell/${spell.id}.png`}
-            width={0}
-            height={0}
+            width={48}
+            height={48}
             sizes="100vw"
             alt={spell.id}
-            style={{ width: "15%", height: "auto" }}
+            // style={{ width: "15%", height: "auto" }}
           />
 
           <div className={style.description}>

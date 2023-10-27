@@ -1,4 +1,4 @@
-import style from "../components/SingleChampion.module.css";
+import style from "./SingleChampion.module.css";
 
 export function ChampionDescription({ lore }) {
   let textContentOutput = "";

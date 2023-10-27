@@ -1,4 +1,4 @@
-import { ListOfTanks } from "../components/ListOfTanks";
+import { ListOfTanks } from "./ListOfTanks";
 
 export default function Tanks() {
   return (

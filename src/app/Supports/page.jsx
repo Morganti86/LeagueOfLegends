@@ -1,4 +1,4 @@
-import { ListOfSupports } from "../components/ListOfSupports";
+import { ListOfSupports } from "./ListOfSupports";
 
 export default function Support() {
   return (
