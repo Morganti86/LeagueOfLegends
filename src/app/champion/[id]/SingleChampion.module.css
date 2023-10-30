@@ -1,5 +1,5 @@
 .container {
-  margin: 2% 25%;
+  margin: 2% 20%;
 }
 
 .title {
@@ -29,6 +29,7 @@
   font-weight: bold;
   line-height: 1rem;
   white-space: pre;
+  font-size: medium;
 }
 
 .progress_bar {
@@ -36,6 +37,7 @@
   border-radius: 15px;
   text-align: center;
   width: 100%;
+  margin-bottom: 5%;
 }
 
 .progress_bar > div {
@@ -93,4 +95,22 @@
   font-family: system-ui;
   letter-spacing: 0.05em;
   position: absolute;
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin: 2% 15%;
+  }
+
+  .description {
+    font-size: small;
+  }
+
+  .subTitle {
+    font-size: small;
+  }
+
+  .containerBar {
+    font-size: small;
+  }
 }

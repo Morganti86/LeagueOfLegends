@@ -16,7 +16,7 @@ export function ChampionDifficulty({ difficulty }) {
   }
 
   return (
-    <div className={style.container}>
+    <section className={style.container}>
       <div className={style.containerBar}>
         {"DIFFICULTY: "}
         <div className={style.progress_bar}>
@@ -25,7 +25,7 @@ export function ChampionDifficulty({ difficulty }) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
   //max 10 min 0
 }

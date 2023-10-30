@@ -2,10 +2,16 @@
   color: rgb(195, 174, 60);
   font-family: system-ui;
   margin: 2vw;
-  font-size: 4vw;
+  font-size: 5vw;
   font-weight: 800;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   text-align: center;
   -webkit-text-stroke: 0.05vw ivory;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 4vw;
+  }
 }

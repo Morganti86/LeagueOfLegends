@@ -10,6 +10,8 @@
   font-family: system-ui;
   font-size: medium;
   font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .navigation li:hover {
@@ -31,4 +33,16 @@
 .label {
   width: 165px;
   line-height: 30px;
+}
+
+@media (max-width: 500px) {
+  .label {
+    width: 80px;
+    line-height: 20px;
+  }
+
+  .navigation {
+    font-size: x-small;
+  }
+  
 }

@@ -8,7 +8,6 @@ import { usePathname } from 'next/navigation'
 export function Navigation() {
   const pathname = usePathname();
   let path = Object.values({ pathname }).toString().slice(1);
-    console.log(path);
 
   if (path === "" || path.substring(0,8) === "champion") {
     path = "All"
