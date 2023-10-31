@@ -8,9 +8,8 @@ import { usePathname } from 'next/navigation'
 export function Navigation() {
   const pathname = usePathname();
   let path = Object.values({ pathname }).toString().slice(1);
-
-  if (path === "" || path.substring(0,8) === "champion") {
-    path = "All"
+  if (path === "" || path.substring(0, 8).toLowerCase() === "champion") {
+    path = "All";
   }
 
   const [highlight, setHighlight] = useState(path);

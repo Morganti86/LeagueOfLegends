@@ -14,7 +14,7 @@ export async function ListOfChampions() {
     <div className={styles.container}>
       <div className={styles.championList}>
         {Object.values(allChampions.data).map((champion) => (
-          <Link href="/Champion/[id]" as={`Champion/${champion.id}`}>
+          <Link href="/champion/[id]" as={`champion/${champion.id}`}>
             <div key={champion.id}
               className={styles.championBackground}
               style={{
