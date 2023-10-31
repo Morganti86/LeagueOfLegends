@@ -44,7 +44,6 @@
   white-space: nowrap;
   border-radius: 15px;
   animation: progress_bar 10s;
-  -webkit-text-stroke: 0.1px black;
 }
 
 @keyframes progress_bar {

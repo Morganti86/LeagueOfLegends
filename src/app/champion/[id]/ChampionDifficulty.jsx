@@ -6,7 +6,7 @@ export function ChampionDifficulty({ difficulty }) {
 
   if (difficulty <= 3) {
     difDescription = "LOW";
-    difColor = "rgb(0, 255, 0)"; // green
+    difColor = "rgb(41 197 41)";
   } else if (difficulty < 8) {
     difDescription = "MEDIUM";
     difColor = "rgb(195, 174, 60)"; //yellow
