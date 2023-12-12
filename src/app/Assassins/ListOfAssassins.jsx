@@ -1,5 +1,5 @@
-import styles from '../components/ListOfChampions.module.css'
-import Link from "next/link";
+import styles from "../components/ListOfChampions.module.css";
+import { ListOfChampions } from '../components/ListOfChampions';
 
 const fetchAllChampions = () => {
   return fetch(
@@ -17,22 +17,7 @@ export async function ListOfAssassins() {
     <div className={styles.container}>
       <div className={styles.championList}>
         {assassins.map((champion) => (
-          <Link href="/champion/[id]" as={`/champion/${champion.id}`}>
-            <div
-              style={{
-                backgroundImage: `url(
-                "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.id}_0.jpg"
-              )`,
-                height: "250px",
-                width: "150px",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-              }}>
-              <div className={styles.championCard}>
-                <div className={styles.championName}>{champion.name}</div>
-              </div>
-            </div>
-          </Link>
+          <ListOfChampions champion={champion} />
         ))}
       </div>
     </div>

@@ -7,7 +7,7 @@ export function ChampionTips({ tips, tipsTitle }) {
       <h3 className={style.title}>{tipsTitle}</h3>
       <ul className={style.description}>
         {tips.map((tip) => (
-          <li>
+          <li key={tip.title}>
             {tip}
             <br />
             <br />

@@ -1,5 +1,5 @@
-import styles from "../components/ListOfChampions.module.css";
-import { ListOfChampions } from "../components/ListOfChampions";
+import styles from "./ListOfChampions.module.css";
+import { ListOfChampions } from "./ListOfChampions";
 
 const fetchAllChampions = () => {
   return fetch(
@@ -7,16 +7,13 @@ const fetchAllChampions = () => {
   ).then((res) => res.json());
 };
 
-export async function ListOfMages() {
+export async function AllChampions() {
   const allChampions = await fetchAllChampions();
-  const mages = Object.values(allChampions.data).filter((champion) =>
-    champion.tags.includes("Mage")
-  );
 
   return (
     <div className={styles.container}>
       <div className={styles.championList}>
-        {mages.map((champion) => (
+        {Object.values(allChampions.data).map((champion) => (
           <ListOfChampions champion={champion} />
         ))}
       </div>

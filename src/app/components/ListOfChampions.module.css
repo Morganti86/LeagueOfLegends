@@ -17,10 +17,16 @@
   justify-content: center;
 }
 
-/* .championBackground {
-    height: 0;
-    width: 0;
-  } */
+.ListCard {
+  opacity: 1;
+  transform: none;
+  transition: opacity 1s, transform 2s;
+}
+
+.ListCard.show {
+  opacity: 0;
+  transform: translateY(0);
+}
 
 .championCard {
   border-style: solid;
@@ -50,6 +56,7 @@
 
 .championCard:hover .championName {
   text-align: right;
+  box-shadow: rgb(195, 174, 60);
 }
 
 /* @media (max-width: 500px) {

@@ -1,9 +1,9 @@
-import { ListOfChampions } from "./components/ListOfChampions";
+import { AllChampions} from "./components/AllChampions";
 
 export default function Home() {
   return (
     <section>
-      <ListOfChampions />
+      <AllChampions />
     </section>
   );
 }
