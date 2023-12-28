@@ -22,8 +22,8 @@ export default async function SingleChampion({ id }) {
   const title = championId[0].title;
   const lore = championId[0].lore;
   const difficulty = championId[0].info.difficulty;
-  const allyTips = championId[0].allytips;
-  const enemyTips = championId[0].enemytips;
+  // const allyTips = championId[0].allytips;
+  // const enemyTips = championId[0].enemytips;
   const passive = championId[0].passive;
   const spells = championId[0].spells;
 
@@ -44,8 +44,8 @@ export default async function SingleChampion({ id }) {
       <ChampionTitle name={name} title={title} />
       <Title title="INFORMATION" />
       <ChampionDescription lore={lore} />
-      <ChampionDifficulty difficulty={difficulty} />
       <ChampionGuide name={name} />
+      <ChampionDifficulty difficulty={difficulty} />
       <Title title="ABILITIES" />
       <ChampionAbilities passive={passive} spells={spells} />
       <Title title="SKINS" />

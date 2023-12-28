@@ -53,6 +53,7 @@
 }
 
 .containerGuide {
+  margin: 8% 0;
   display: flex;
   justify-content: center;
   position: relative;
@@ -61,7 +62,6 @@
 .guideTitle {
   display: flex;
   justify-content: flex-end;
-  padding: 5% 0;
 }
 
 .guideTitleName {
@@ -76,6 +76,10 @@
   -webkit-text-stroke: 1px rgb(195, 174, 60);
   font-family: system-ui;
   letter-spacing: 15px;
+}
+
+.guideImage:hover {
+  border: 2px solid rgb(195, 174, 60);
 }
 
 .containerSpells {
@@ -133,12 +137,11 @@
 
 .skinName {
   margin-left: 2%;
+  margin-top: -15px;
   font-size: 2.6vw;
-  flex-wrap: wrap;
   font-weight: 700;
   backdrop-filter: blur(5px);
   text-transform: uppercase;
-  justify-content: center;
   -webkit-text-stroke: 0.1vw rgb(195, 174, 60);
   font-family: system-ui;
   letter-spacing: 0.05em;

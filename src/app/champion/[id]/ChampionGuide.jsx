@@ -6,6 +6,7 @@ export function ChampionGuide({ name }) {
       <div className={style.containerGuide}>
         <a href={`https://u.gg/lol/champions/${name}/build`}>
           <div
+            className={style.guideImage}
             style={{
               backgroundImage: `url(
                 "https://ddragon.leagueoflegends.com/cdn/13.24.1/img/champion/${name}.png"
@@ -24,21 +25,3 @@ export function ChampionGuide({ name }) {
     </section>
   );
 }
-
-// <section className={style.container}>
-//       <div className={style.containerGuide}>
-//         <a href={`https://u.gg/lol/champions/${name}/build`}>
-//           <Image
-//             className={style.guideImage}
-//             src={`https://ddragon.leagueoflegends.com/cdn/13.24.1/img/champion/${name}.png`}
-//             width={150}
-//             height={150}
-//             sizes="100vw"
-//             alt={name}
-//             priority={true}
-//             placeholder="empty"
-//           />
-//           <div className={style.guideTitle}>GUIDE</div>
-//         </a>
-//       </div>
-//     </section>
