@@ -5,6 +5,7 @@ import { ChampionSkins } from "./ChampionSkins";
 import { Title } from "../../components/Title";
 import ChampionAbilities from "./ChampionAbilities";
 import { ChampionDifficulty } from "./ChampionDifficulty";
+import { ChampionGuide } from "./ChampionGuide";
 
 const fetchChampion = async (id) => {
   const res = await fetch(
@@ -44,6 +45,7 @@ export default async function SingleChampion({ id }) {
       <Title title="INFORMATION" />
       <ChampionDescription lore={lore} />
       <ChampionDifficulty difficulty={difficulty} />
+      <ChampionGuide name={name} />
       <Title title="ABILITIES" />
       <ChampionAbilities passive={passive} spells={spells} />
       <Title title="SKINS" />

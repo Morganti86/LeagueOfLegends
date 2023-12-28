@@ -12,8 +12,9 @@ export function ListOfChampions({ champion }) {
       if (cardRef.current) {
         const rect = cardRef.current?.getBoundingClientRect();
         const visible =
-          rect?.top >= window.innerHeight / 1.2 ||
-          rect?.bottom <= window.innerHeight / 6;
+          // rect?.top >= window.innerHeight / 1.2 ||
+          // rect?.bottom <= window.innerHeight / 6;
+          rect?.top >= window.innerHeight / 1.1;
         setIsVisible(visible);
       }
     };
