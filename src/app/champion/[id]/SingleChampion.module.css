@@ -62,6 +62,7 @@
 .guideTitle {
   display: flex;
   justify-content: flex-end;
+  padding: 3% 0;
 }
 
 .guideTitleName {
