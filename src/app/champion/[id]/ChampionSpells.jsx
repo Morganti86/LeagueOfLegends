@@ -7,7 +7,7 @@ export function ChampionSpells({ spells }) {
   return (
     <>
       {spells.map((spell, index) => (
-        <div className={style.containerSpells}>
+        <div key={spell} className={style.containerSpells}>
           <h3 className={style.subTitle}>
             {spell.name} (
             {index === 0

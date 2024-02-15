@@ -1,3 +1,4 @@
+'use client'
 import styles from "./ListOfChampions.module.css";
 import { ListOfChampions } from "./ListOfChampions";
 
