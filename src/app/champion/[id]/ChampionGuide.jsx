@@ -2,8 +2,7 @@ import style from "./SingleChampion.module.css";
 
 export function ChampionGuide({ name }) {
   return (
-    <section className={style.container}>
-      <div className={style.containerGuide}>
+    <section>
         <a
           href={`https://u.gg/lol/champions/${name}/build`}
           target="_blank"
@@ -15,8 +14,6 @@ export function ChampionGuide({ name }) {
               backgroundImage: `url(
                 "https://ddragon.leagueoflegends.com/cdn/13.24.1/img/champion/${name}.png"
               )`,
-              height: 150,
-              width: 150,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
             }}>
@@ -25,7 +22,6 @@ export function ChampionGuide({ name }) {
             </div>
           </div>
         </a>
-      </div>
     </section>
   );
 }

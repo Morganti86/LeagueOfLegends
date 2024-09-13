@@ -6,6 +6,7 @@ import { Title } from "../../components/Title";
 import ChampionAbilities from "./ChampionAbilities";
 import { ChampionDifficulty } from "./ChampionDifficulty";
 import { ChampionGuide } from "./ChampionGuide";
+import style from "./SingleChampion.module.css"
 
 const fetchChampion = async (id) => {
   const res = await fetch(
@@ -43,8 +44,10 @@ export default async function SingleChampion({ id }) {
       <ChampionImage name={name} skin={randomSkin.skinId} />
       <ChampionTitle name={name} title={title} />
       <Title title="INFORMATION" />
-      <ChampionDescription lore={lore} />
-      <ChampionGuide name={name} />
+      <div className={style.information}>
+        <ChampionDescription lore={lore} />
+        <ChampionGuide name={name} style={{float: "right"}} />
+      </div>
       <ChampionDifficulty difficulty={difficulty} />
       <Title title="ABILITIES" />
       <ChampionAbilities passive={passive} spells={spells} />
